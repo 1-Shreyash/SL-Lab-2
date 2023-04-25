@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="">
+            <p>*All fields are required in this form</p>
+            <div class="card"> 
+                <div class="n">
+                    <div>First Name:</div>
+                    <input type="text" placeholder="First Name" class="input1" required>
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>Last Name:</div>
+                    <input type="text" placeholder="Last Name" class="input1" required>
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>College:</div>
+                    <input type="text" placeholder="College" class="input1" required>
+                </div></div>
+            <div class="card">
+                <div class="sel">
+                    <div class="selTitle">Branch:</div>
+                    <select name="dept" class="input2" id="" required>
+                        <option value="" hidden></option>
+                        <option value="">Computer Science and Engineering</option>
+                        <option value="">Artificial Intelligence and Machine Learning</option>
+                        <option value="">Data Science</option>
+                        <option value="">Cyber Security</option>
+                        <option value="">Mechanical Engineering</option>
+                        <option value="">Information & Technology</option>
+                        <option value="">Industrial Engineering</option>
+                        <option value="">Electrical Engineering</option>
+                        <option value="">Electronic Engineering</option>
+                        <option value="">Mining Engineering</option>
+                        <option value="">Civil Engineering</option>
+                    </select>
+                </div></div>
+            <div class="card">
+                <div class="n">
+                    <label for="addr">Address:</label>
+                    <textarea name="" id="addr" style="width:90%; height:3vw;font-size: 1vw;" placeholder="Enter your address" style="
+                    font-family: 'Poppins', sans-serif;"></textarea>
+                </div></div>
+            <div class="card" required>
+                <div class="n">
+                    <div>Email:</div>
+                    <input type="email" placeholder="Email" class="input1">
+                </div></div>
+            <div class="card" required>
+                <div class="n">
+                    <div>Phone:</div>
+                    <input type="text" placeholder="Phone" class="input1">
+                </div></div>
+            <div class="card">
+                <div class="radiofill">
+                    <div class="radiotitle">Gender :</div>
+                    <span class="radioC">
+                        <input type="radio" name="radioC" id="male" required>
+                        <label for="male">Male</label><br>
+                    </span>
+                    <span class="radioC">
+                        <input type="radio" name="radioC" id="female" required>
+                        <label for="female">Female</label><br>
+                    </span>
+                    <span class="radioC">
+                        <input type="radio" name="radioC" id="others" required>
+                        <label for="others">Others</label><br>
+                    </span>
+                </div></div>
+            <div class="card">
+                <div class="radiofill">
+                    <div class="radiotitle">Programme :</div>
+                    <span class="radioC">
+                        <input type="radio" name="radioD" id="btech" required>
+                        <label for="btech">B.Tech</label><br>
+                    </span>
+                    <span class="radioC">
+                        <input type="radio" name="radioD" id="mtech" required>
+                        <label for="mtech">M.Tech</label><br>
+                    </span>
+                </div></div>
+            <div class="card">
+                <div class="sel">
+                    <div class="selTitle">Year:</div>
+                    <select name="dept" id=""  class="input2" required>
+                        <option value="" hidden></option>
+                        <option value="">1st</option>
+                        <option value="">2nd</option>
+                        <option value="">3rd</option>
+                        <option value="">4th</option>
+                    </select>
+                </div></div>
+            <div class="card">
+                <div class="sel">
+                    <div class="selTitle">City:</div>
+                    <select name="dept" id="" required class="input2">
+                        <option value="" hidden></option>
+                        <option value="">Nagpur</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Delhi</option>
+                        <option value="">Banglore</option>
+                        <option value="">Ahmedabad</option>
+                        <option value="">Pune</option>
+                        <option value="">Bhopal</option>
+                    </select>
+                </div></div>
+            <div class="card">
+                <div class="sel">
+                    <div class="selTitle">State:</div>
+                    <select name="dept" id="" required class="input2">
+                        <option value="" hidden></option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Delhi</option>
+                        <option value="">Gujarat</option>
+                        <option value="">Madhya Pradesh</option>
+                    </select>
+                </div></div>
+            <div class="card">
+                <label for="clgid">Attach College id:</label>
+                <input type="file" id="clgid" required style="height: 100%; font-size: 1.2vw;"></div>
+            <div class="card">
+                <label for="amt">Amount Paid(in ₹):</label>
+                <input type="number" placeholder="0" id="amt" style="height: 4vw; width: 50%; font-size: 2vw;padding-left:1vw;" min="0" required>
+            </div>
+            <div class="card">
+                <input type="text" placeholder="Transaction ID" class="input1" required></div>
+            <div class="card">
+                <div class="ckbox">
+                    <div class="title">Profession :</div>
+                    <input type="checkbox" id="CSE">
+                    <label for="CSE">CSE</label>
+                    <input type="checkbox" id="ICSE">
+                    <label for="ICSE">ICSE</label>
+                    <input type="checkbox" id="ISTC">
+                    <label for="ISTC">ISTC</label>
+                    <input type="checkbox" id="IST">
+                    <label for="IST">IST</label>
+                </div></div>
+            <div class="btns">
+                <input type="submit" value="Submit" class="btn">
+                <input type="reset" value="Reset" onclick="alert('Cleared Entries!');" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
