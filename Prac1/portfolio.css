@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Poppins';
+    overflow: scroll;
+}
+.bck{
+    width: 200vw;
+    height: 300vh;
+    position: fixed;
+    z-index: -1;
+    background: linear-gradient(to left top, #002066, rgb(201, 1, 144),black);
+    animation: bckanim 4s ease infinite alternate-reverse;
+}
+.box{
+    width: 90vw;
+    height: 180vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff10;
+    box-shadow: 0 0 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 50px );
+    -webkit-backdrop-filter: blur( 20px );
+}
+.intro{
+    width: 90%;
+    height: 250px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.intro .p2{
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+    margin-left: 100px;
+}
+.img{
+    height: 90%;
+    width: 20%;
+    background-image: url("shreyash.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.intro .p1{
+    font-size: 40px;
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.about{
+    margin-top: 50px;
+}
+.container{
+    margin: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .head{
+    font-size:50px;
+}
+.content{
+    font-size:18px;
+}
+.content a{
+    color: white;
+    text-decoration: none;
+}
+@keyframes bckanim{
+    0%{
+        left: 0;
+    }
+    100%{
+        left:-100vw;
+    }
+}
+.foot{
+    margin:30px;
+    display: flex;
+    flex-direction: row;
+}
