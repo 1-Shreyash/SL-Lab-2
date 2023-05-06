@@ -354,7 +354,8 @@ main{
 .stars1{
     position: absolute;
     top:0px;
-    left: 1px;
+    left: 0px;
+    text-shadow: #ff0000;
     z-index: 1000;
 }
 .stars2{

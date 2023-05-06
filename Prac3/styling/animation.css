@@ -1,4 +1,4 @@
-/* 
+
 i{
     transition: transform 0.3s ease;
 }
@@ -76,4 +76,4 @@ i{
 .dropdownA1 .nodp1:hover .b1{
     background-color:rgba(0,0,0,.03);
     color: var(--main-bg-color);
-} */
+}
