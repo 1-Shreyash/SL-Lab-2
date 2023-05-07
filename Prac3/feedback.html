@@ -28,6 +28,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
     <link rel="stylesheet" href="./styling/style.css" />
     <link rel="stylesheet" href="./styling/util.css" />
     <link rel="stylesheet" href="./styling/animation.css" />
@@ -184,7 +185,7 @@
         </div>
       </nav>
     </header>
-    <div class="nav2">
+    <!--<div class="nav2">
       <div class="item">
         <a href=""
           ><div><img src="./images/grocery.webp" alt="" width="64px" /></div>
@@ -1286,7 +1287,7 @@
             </div>
           </div>
       </div>
-    </div>
+    </div> -->
     <main>
       <div class="rate">
         <p style="font-size: 20px;">Rating & Reviews</p>
@@ -1308,12 +1309,12 @@
         <div class="prHead">
           <p class="productP">Rate this Product</p>
           <div class="prStars">
-            <i class="fa-solid fa-star fa-2xl" class="s" style="color: #fff; text-shadow: 0 0 1px black;"></i>
-            <i class="fa-solid fa-star fa-2xl" class="s2" style="color: #fff; text-shadow: 0 0 1px black;"></i>
-            <i class="fa-solid fa-star fa-2xl" class="s3" style="color: #fff; text-shadow: 0 0 1px black;"></i>
-            <i class="fa-solid fa-star fa-2xl" class="s4" style="color: #fff; text-shadow: 0 0 1px black;"></i>
-            <i class="fa-solid fa-star fa-2xl" class="s5" style="color: #fff; text-shadow: 0 0 1px black;"></i>
-            <p>Exellent</p>
+            <i class="fa-solid fa-star fa-2xl s" id="s1"></i>
+            <i class="fa-solid fa-star fa-2xl s" id="s2"></i>
+            <i class="fa-solid fa-star fa-2xl s" id="s3"></i>
+            <i class="fa-solid fa-star fa-2xl s" id="s4"></i>
+            <i class="fa-solid fa-star fa-2xl s" id="s5"></i>
+            <p id="Remark">Exellent</p>
           </div>
         </div>
         <div class="prBody">
@@ -1427,4 +1428,5 @@
         </a>
       </div>
     </footer>
+    <script src="./JavaScript/feedback.js"></script>
 </body>

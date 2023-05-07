@@ -88,7 +88,7 @@
     outline: none;
 }
 .formRate button{
-    background-color: rgb(255, 101, 19);
+    background-color: rgb(0, 149, 25);
     font-size: 16px;
     margin: 20px 0;
     width: 20vw;
@@ -97,7 +97,37 @@
     color: white
 }
 
-i:hover i{
+
+.s{
+    color: #ffe100;
+    text-shadow: 0 0 1px black !important; 
+}
+
+/* #s1:hover{
+    color: #ffe100 !important;
+}
+#s2:hover +#s3{
+    color: #ffe100 !important;
+}
+#s2:hover{
+    color: #ffe100 !important;
+} */
+/* .fa-solid .fa-star:hover{
+    color: #ffe100 !important;
+} */
+/* .s1:hover{
     color: #ffe100;
     background-color: #ffe100 ;
+    border: 1px solid red;
+}
+.s2:hover  .s3{
+    color: #ffe100;
+    background-color: #ffe100 ;
+    border: 1px solid red !important;
+}  */
+.prStars p{
+    min-width: 500px;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 1000;
 }
