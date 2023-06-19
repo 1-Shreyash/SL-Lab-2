@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="">
+            <p>*Fields required in this form</p>
+            <div class="card"> 
+                <div class="n">
+                    <div><span><span style="color:red;">*</span><span>User Id:</span></span> </div>
+                    <input type="text" placeholder="" class="input1" required>
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>Password:</div>
+                    <input type="text" placeholder="" class="input1" required>
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>Renter-Password:</div>
+                    <input type="text" placeholder="" class="input1" required>
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+            <span><span style="color:red;">*</span><span>Name:</div>
+                    <input type="text" placeholder="" class="input1" required>
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+            <span><span style="color:red;">*</span><span>Address:</div>
+                    <input type="text" placeholder="" class="input1" required>
+                </div></div>
+            <div class="card">
+                <div class="sel">
+                    <div class="selTitle">
+            <span><span style="color:red;">*</span><span>Country:</div>
+                    <select name="dept" class="input2" id="" required>
+                        <option value="" hidden></option>
+                        <option value="">India</option>
+                        <option value="">China</option>
+                        <option value="">US</option>
+                        <option value="">Japan</option>
+                        <option value="">Afghanisthan</option>
+                    </select>
+                </div></div>
+                <div class="card" required>
+                    <div class="n">
+                        <div>
+            <span><span style="color:red;">*</span><span>ZIP code:</div>
+                        <input type="number" placeholder="" class="input1">
+                    </div></div>
+            <div class="card" required>
+                <div class="n">
+                    <div>
+            <span><span style="color:red;">*</span><span>Email:</div>
+                    <input type="text" placeholder="xyz@rknec.edu" class="input1">
+                </div></div>
+            <div class="card">
+                <div class="radiofill">
+                    <div class="radiotitle">
+            <span><span style="color:red;">*</span><span>Gender :</div>
+                    <span class="radioC">
+                        <input type="radio" name="radioC" id="male" required>
+                        <label for="male">Male</label><br>
+                    </span>
+                    <span class="radioC">
+                        <input type="radio" name="radioC" id="female" required>
+                        <label for="female">Female</label><br>
+                    </span>
+                    <span class="radioC">
+                        <input type="radio" name="radioC" id="others" required>
+                        <label for="others">Others</label><br>
+                    </span>
+                </div></div>
+            <div class="card">
+                <div class="radiofill">
+                    <div class="radiotitle">
+            <span><span style="color:red;">*</span><span>Programme :</div>
+                    <span class="radioC">
+                        <input type="radio" name="radioD" id="btech" required>
+                        <label for="btech">B.Tech</label><br>
+                    </span>
+                    <span class="radioC">
+                        <input type="radio" name="radioD" id="mtech" required>
+                        <label for="mtech">M.Tech</label><br>
+                    </span>
+                </div></div>
+            <div class="card">
+                <div class="ckbox">
+                    <div class="title">
+            <span><span style="color:red;">*</span><span>Languages :</div>
+                    <input type="checkbox" id="CSE">
+                    <label for="CSE">English</label>
+                    <input type="checkbox" id="ICSE">
+                    <label for="ICSE">Hindi</label>
+                    <input type="checkbox" id="ISTC">
+                    <label for="ISTC">Marathi</label>
+                    <input type="checkbox" id="IST">
+                    <label for="IST">Hinglish</label>
+                </div></div>
+            <div class="card" required>
+                <div>
+                    <div>About:</div>
+                    <textarea class="input1"></textarea>
+                </div></div>
+            <div class="btns">
+                <input type="submit" value="Submit" class="btn">
+                <input type="reset" value="Reset" onclick="alert('Cleared Entries!');" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
