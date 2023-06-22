@@ -112,29 +112,28 @@ function userid_validation(uid, mx, my) {
   return true;
 }
 function validateForm() {
-  //validation user id
-//   var uid = document.forms["registrationForm"]["uid"];
-//   userid_validation(uid, 5, 13);
+  var uid = document.forms["registrationForm"]["uid"];
+  userid_validation(uid, 5, 13);
 
-//   var password1 = document.forms["registrationForm"]["password1"];
-//   var password2 = document.forms["registrationForm"]["password2"];
-//   passid_validation(password1);
-//   passid_validation(password2);
-//   if (password1.value != password2.value) {
-//     alert("password must be same!");
-//   }
+  var password1 = document.forms["registrationForm"]["password1"];
+  var password2 = document.forms["registrationForm"]["password2"];
+  passid_validation(password1);
+  passid_validation(password2);
+  if (password1.value != password2.value) {
+    alert("password must be same!");
+  }
 
-//   var name = document.forms["registrationForm"]["name"];
-//   allLetter(name);
+  var name = document.forms["registrationForm"]["name"];
+  allLetter(name);
 
-//   var country = document.forms["registrationForm"]["country"];
-//   countryselect(country);
+  var country = document.forms["registrationForm"]["country"];
+  countryselect(country);
 
-//   var zip = document.forms["registrationForm"]["zipCode"];
-//   allnumeric(zip);
+  var zip = document.forms["registrationForm"]["zipCode"];
+  allnumeric(zip);
 
-//   var email = document.forms["registrationForm"]["email"];
-//   ValidateEmail(email);
+  var email = document.forms["registrationForm"]["email"];
+  ValidateEmail(email);
 
     var gender = document.forms["registrationForm"]["gender"]; 
     validGender(gender[0],gender[1],gender[2]);
