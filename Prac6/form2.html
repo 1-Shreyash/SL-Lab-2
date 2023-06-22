@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Registeration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Exam Registration Form</h2>
+        <form action="" name="registrationForm" onsubmit="return validateForm()">
+            <p>*Fields required in this form</p>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>Name:
+                    </div>
+                    <input type="text" placeholder="" class="input1" name="name">
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>Email:
+                    </div>
+                    <input type="text" placeholder="xyz@rknec.edu" class="input1" name="email">
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>Mobile Number:
+                    </div>
+                    <input type="text" placeholder="" class="input1" name="mobile">
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>Date of Birth:
+                    </div>
+                    <input type="date" placeholder="" name="dob">
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>10th Marks:
+                    </div>
+                    <input type="number" placeholder="" class="input1" name="xMarks">
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>12th Marks:
+                    </div>
+                    <input type="number" placeholder="" class="input1" name="xiMarks">
+                </div>
+            </div>
+            <div class="card">
+                <div class="n">
+                    <div>
+                        Degree:
+                    </div>
+                    <input type="text" placeholder="" class="input1">
+                </div>
+            </div>
+            <div class="card" onchange="OptCard()">
+                <label>Payment Method:</label>
+                <select name="paymentMethod">
+                    <option value="none" style="display: none;"></option>
+                    <option value="Card" >Card</option>
+                    <option value="UPI" >UPI</option>
+                </select>
+            </div>
+            <div class="card" id="card" style="display: none;">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>Card Number:
+                    </div>
+                    <input type="number" placeholder="" class="input1" name="cardNumber">
+                </div>
+            </div>
+            <div class="card" id="upi" style="display: none;">
+                <div class="n">
+                    <div>
+                        <span><span style="color:red;">*</span><span>Upi id :
+                    </div>
+                    <input type="text" placeholder="" class="input1" name="upiID">
+                </div>
+            </div>
+            <div class="btns">
+                <input type="submit" value="Submit" class="btn">
+                <input type="reset" value="Reset" onclick="alert('Cleared Entries!');" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="app2.js"></script>
+
+</html>
